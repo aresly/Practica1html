@@ -43,6 +43,11 @@ header{
     color: #FFFFFF;
     font-size: 20px;
 }
+#lupa{
+    height: 15px;
+    position:relative; 
+    left:-25px;
+}
 #menu_logo{
     display:grid;
     grid-template-columns: 1fr auto auto auto;
@@ -149,7 +154,16 @@ header{
     color: #FFFFFF;
     font-family: 'Brandon Grotesque';
 }
+#menu_central #menu_central_titulo > button:hover{
+    background-color: #FFFFFF;
+    color: #000000;
 
+}
+#menu_central #menu_central_titulo .fa-arrow-right:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+
+}
 .container_img{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -178,16 +192,33 @@ header{
     margin: 0;
     padding: 10px;
 }
-
 .title_imagenes:hover{
+    padding: 10px 0;
     background-color: #FFFFFF;
-    
-}
-
-.title_imagenes p:hover{
-    color: #000000;
 
 }
+.title_imgid{
+    color: #FFFFFF;
+    margin: 0;
+    font-size: 1em;
+    text-align: left;
+}
+
+.title_imagenes:hover > p{
+    color: #000000; 
+    padding-left: 10px;
+}
+
+.title_imagenes:hover > .title_imgid::after{
+    content: url("../img/castillo.svg");
+    font-size: 10px;
+}
+
+.title_imagenes:hover > .title_img::before{
+    content: url("../img/castillo.svg");
+    font-size: 10px;
+}
+
 .title_img{
     color: #FFFFFF;
     margin: 0;
@@ -241,7 +272,9 @@ header{
     align-self: center;
     font-family: 'Brandon Grotesque';
 }
-
+.container_view > span:hover{
+    color: #DF991B;
+}
 .boton_borde{
     border: 1px solid rgb(0, 0, 0);
     border-radius: 100px;

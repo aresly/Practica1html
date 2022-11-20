@@ -90,6 +90,9 @@
                 <a class="boton_borde">View all propierties</a>
                 <span>NEXT ></span>
             </div>
+            <div class="container_view_mobile">
+                <i class="fa-solid fa-arrow-right" id="icon_flecha"></i><p>View all propierties</p>
+            </div>
         </div>
     </div>
 
@@ -198,30 +201,28 @@
         <h4>Luxury propierties</h4>
         <h2>Developments</h2>
         <div class="container_gallery_img">
+            
+            <a class="div_imagenes" style="background-image: url('img/quebee.jpg'); margin: 10px;">
+                <div class="title_imagenes">
+                    <p class="title_img">Canadá</p>
+                    <p class="title_img2">Quebec</p>
+                </div>
+            </a>   
+            <a class="div_imagenes" style="background-image: url('img/location.jpg'); margin: 10px;">
+                <div class="title_imagenes">
+                    <p class="title_img">Name property</p>
+                    <p class="title_img2">Location</p>
+                </div>
+            </a>
+            <a class="div_imagenes" style="background-image: url('img/barcelona.jpg'); margin: 10px;">
+                <div class="title_imagenes">
+                    <p class="title_img">Spain</p>
+                    <p class="title_img2">Barcelona</p>
+                </div>
+            </a>             
+         
 
-            <div class="g_imagenes ">
-                <div class="div_imagenes"  style="background-image: url('img/quebee.jpg'); margin: 10px;">
-                    <img src="img/quebee.jpg">
-                    <div class="title_imagenes">
-                        <p>Canadá</p>
-                        <h5>Quebec</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="g_imagenes">
-                <img src="img/location.jpg">
-                <div class="title_imagenes">
-                    <p>Name property</p>
-                    <h5>Location</h5>
-                </div>
-            </div>
-            <div class="g_imagenes">
-                <img src="img/barcelona.jpg">
-                <div class="title_imagenes">
-                    <p>Spain </p>
-                    <h5>Barcelona</h5>
-                </div>
-            </div>
+            
         </div>
     </div>
 
@@ -234,7 +235,13 @@
         </div>
         <div class="container_services_title">
             <div class="logo_horizontal">
-                <img src="img/logo1.svg">
+                <div class="img_logo">
+                    <div id="logo_ul">
+                        <img src="img/logo1.svg" >
+                    </div>
+                    <div id="elipse"></div>
+                    <div id="rectangle"></div>                    
+                </div>
                
                 <div class="line_logo"></div>
             </div>
@@ -263,6 +270,9 @@
                     <label>Name: </label>
                     <input type="text" placeholder="Ex. name@mail.com">
                     <input type="submit" value="Submit">
+                    <div class="submit_mobile">
+                        <i class="fa-solid fa-arrow-right" id="icon_flecha"></i><p>Submit</p>
+                    </div>
                 </form>
             </div>
         </div>
@@ -317,7 +327,7 @@
     </div>
     <div class="redes_sociales">
         <p>FOLLOW</p>
-        <div id="line_follow"></div>
+        <div  id="line_follow"></div>
         <img src="img/in.svg">
         <img src="img/twitter.svg">
         <img src="img/facebook.svg">
